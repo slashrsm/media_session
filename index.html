@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    
+    <title>Let's fix file and media handling once and for all</title>
+    
+    <meta name="description" content="Let's fix file and media handling once and for all, DrupalCon Prague">
+    <meta name="author" content="Janez Urevc">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/theme/night.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+      document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script>
+
+    <!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <div class="slides">
+	<section>
+	  <h2>Let's fix file and media handling ...</h2>
+	  <h3>... once and for all!</h3>
+	  <p style="margin-top: 2em;">
+	    <small><a href="http://janezurevc.name">Janez Urevc</a> / <a href="http://twitter.com/slashrsm">@slashrsm</a> / <a href="http://janezurevc.name">http://janezurevc.name</a></small>
+	  </p>
+	</section>
+
+        <section>
+          <img src="img/love.jpg" /><br />
+	  <small><small>http://www.travelblog.org/Photos/1432437</small></small>
+        </section>
+
+	<section>
+	  <section>
+	    <h1>D8?</h1>
+	  </section>
+
+	  <section>
+            <img src="img/listing.png" />
+	  </section>
+
+	  <section>
+            <img src="img/wysiwyg.png" />
+	  </section>
+
+	  <section>
+            <img src="img/multi-upload.png" />
+	  </section>
+	</section>
+
+	<section>
+	  <section>
+	    <h2>Most wanted features?</h2>
+	  </section>
+
+	  <section>
+	    <h3>Embed media in WYSIWYG</h3>
+	  </section>
+
+	  <section>
+	    <h3>Re-use of media</h3>
+	  </section>
+
+	  <section>
+	    <h3>Site-wide media library</h3>
+	  </section>
+
+	  <section>
+	    <h3>But...</h3>
+	      It is really all about the features?
+	  </section>
+	</section>
+
+	<section>
+	  <section>
+	    <h3>What people have to say?</h3>
+	  </section>
+
+	  <section>
+	    <blockquote>
+	      It's time file/media management becomes a first-class citizen in Drupal. It should have been a full-fledged initiative for D8.
+	    </blockquote>
+	  </section>
+	  <section>
+	    <blockquote>
+	      There is no doubt that [solution X] is the future. [Solution Y] has a few features that can be incorporated but it takes a very hacky approach.
+	    </blockquote>
+	  </section>
+	  <section>
+	    <blockquote>
+	      [Solution X] was left alone by the Big Players after initial backing (Looking at you, [company A]).
+	    </blockquote>
+	  </section>
+	  <section>
+	    <blockquote>
+	      We need to focus on the content creators! The state of media handling is overall appalling.
+	    </blockquote>
+	  </section>
+	  <section>
+	    <blockquote>
+	      I really like what [solution Y] is doing. [Solution Y] has the content creators in mind like NO other solution.
+	    </blockquote>
+	  </section>
+	</section>
+
+
+	<section>
+	  <section>
+	    <h3>Where should we go from here?</h3>
+	  </section>
+	  <section>
+	    <h3>We should start now!</h3>
+	    Solid and reliable D8 media handling solution/solutions must be ready early enough.
+	  </section>
+	  <section>
+	    <h3>Talk, talk, talk...</h3>
+	    Let's try to work together and use the best from each solution.
+	  </section>
+	  <section>
+	    <h3>Make development sustainable</h3>
+	    There is a lot of work to do. Relying strictly on our free time is probably utopia.
+	  </section>
+	</section>
+
+	<section>
+	  <img src="img/discussion.jpg" /><br />
+	  <small><small>http://www.flickr.com/photos/mgifford/4539928584/ by Mike Gifford</small></small>
+	</section>
+
+	<section>
+	  <h2>Thank you!</h2>
+	  <h3>Sprint on friday!</h3>
+	  <h3>Please evaluate!</h3>
+	  <big>prague2013.drupal.org/node/X</big>
+	  <p style="margin-top: 3em;">
+	    <small><a href="http://janezurevc.name">Janez Urevc</a> / <a href="http://twitter.com/slashrsm">@slashrsm</a> / <a href="http://janezurevc.name">http://janezurevc.name</a></small>
+	  </p>
+	</section>
+
+      </div>
+
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
+
+    <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+      controls: true,
+      progress: true,
+      history: true,
+      center: true,
+
+      theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+      transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+      // Optional libraries used to extend on reveal.js
+      dependencies: [
+      { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+      // { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      // { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      // { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+      { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+      { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+      // { src: 'plugin/leap/leap.js', async: true }
+      // { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+      // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+      ]
+      });
+
+    </script>
+
+  </body>
+</html>
