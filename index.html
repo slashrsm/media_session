@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     
-    <title>Let's fix file and media handling once and for all</title>
+    <title>The future of media in D8</title>
     
-    <meta name="description" content="Let's fix file and media handling once and for all, DrupalCon Prague">
+    <meta name="description" content="The future of media in D8, Drupal dev days, Szeged, March 2014">
     <meta name="author" content="Janez Urevc">
 
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -15,6 +15,7 @@
 
     <link rel="stylesheet" href="css/reveal.min.css">
     <link rel="stylesheet" href="css/theme/night.css" id="theme">
+    <link rel="stylesheet" href="css/custom.css">
 
     <!-- For syntax highlighting -->
     <link rel="stylesheet" href="lib/css/zenburn.css">
@@ -35,17 +36,11 @@
 
       <div class="slides">
 	<section>
-	  <h2>Let's fix file and media handling ...</h2>
-	  <h3>... once and for all!</h3>
+	  <h2>The future of media in D8</h2>
 	  <p style="margin-top: 2em;">
 	    <small><a href="http://janezurevc.name">Janez Urevc</a> / <a href="http://twitter.com/slashrsm">@slashrsm</a> / <a href="http://janezurevc.name">http://janezurevc.name</a></small>
 	  </p>
 	</section>
-
-        <section>
-          <img src="img/love.jpg" /><br />
-	  <small><small>http://www.travelblog.org/Photos/1432437</small></small>
-        </section>
 
 	<section>
 	  <section>
@@ -54,105 +49,196 @@
 
 	  <section>
             <img src="img/listing.png" />
+
+            <aside class="notes">
+	      - lists all files in the system along with some basic usage (size, filename, usage count)<br />
+              - view<br />
+            </aside>
+	    
 	  </section>
 
 	  <section>
             <img src="img/wysiwyg.png" />
+
+            <aside class="notes">
+	      - embed images<br />
+              - does not support other media types<br />
+            </aside>
+
 	  </section>
 
 	  <section>
             <img src="img/multi-upload.png" />
+
+            <aside class="notes">
+	      - HTML5 multiple attribute<br />
+            </aside>
+
 	  </section>
 	</section>
 
 	<section>
 	  <section>
-	    <h2>What people need?</h2>
+            <img src="img/cray.jpg" style="width: 85%; height: 85%" />
+	    <h2>Some history</h2>
+            <small class="attribution">Photo by Nick Taylor - <a href="https://flic.kr/p/4pXeXN">https://flic.kr/p/4pXeXN</a></small>
 	  </section>
 
 	  <section>
-	    <h3>Embed media in WYSIWYG</h3>
+	    <h3>Joys of D7...</h3>
+	    Media, Scald, Asset, .... works but we keep complaining
+
+            <aside class="notes">
+	      - survey<br />
+              - we actually cover most of requested features: wysiwyg, site-wide library, re-use of media<br />
+              - still complaining: docs, unstable solutions<br />
+            </aside>
+
 	  </section>
 
 	  <section>
-	    <h3>Re-use of media</h3>
+	    <img src="img/prague.jpg" />
+	    <h3>DrupalCon Prague</h3>
+	    Core conversation, sprint - <a href="https://groups.drupal.org/node/327768">https://groups.drupal.org/node/327768</a>
 	  </section>
 
 	  <section>
-	    <h3>Site-wide media library</h3>
+	    <h3>Sprint at DrupalCamp Vienna</h3>
+	    <a href="https://groups.drupal.org/node/380128">https://groups.drupal.org/node/380128</a> + some other remote sprints
 	  </section>
 
 	  <section>
-	    <h3>But...</h3>
-	      It is really all about the features?
+	    <h3>Basic concepts discussion</h3>
+	    There are still some disagreements... <a href="https://groups.drupal.org/node/384813">https://groups.drupal.org/node/384813</a>
+
+            <aside class="notes">
+	      - disagreement basically about one technical detail<br />
+              - it seems pretty stuck<br />
+	      - BAD! - we need to join all our forces!<br />
+	      - no need to re-invent the wheel 5 times for each release - let's do it once and focus on UX and ease of use<br />
+            </aside>
+
 	  </section>
 	</section>
 
 	<section>
 	  <section>
-	    <h3>What people have to say?</h3>
+	    <h2>Plans?<h2>
 	  </section>
 
 	  <section>
-	    <blockquote>
-	      It's time file/media management becomes a first-class citizen in Drupal. It should have been a full-fledged initiative for D8.
-	    </blockquote>
+	    <h3>Ease of use</h3>
+	    Multi-upload, intiutive library, Wysiwyg integration, drag-and-drop, ...
 	  </section>
+
 	  <section>
-	    <blockquote>
-	      [Solution X] was left alone by the Big Players after initial backing (Looking at you, [company A]).
-	    </blockquote>
+
+	    <h3>Pluggable framework</h3>
+	    Ecosystem of decoupled components that know how to work together.
+
+            <aside class="notes">
+	      - feature modules to make life easier<br />
+              - one can use what really needs<br />
+              - wysiwyg<br />
+              - DnD library<br />
+            </aside>
+
 	  </section>
+
 	  <section>
-	    <blockquote>
-	      There is no doubt that [solution X] is the future. [Solution Y] has a few features that can be incorporated but it takes a very hacky approach.
-	    </blockquote>
+	    <h3>Deliver basic components ASAP</h3>
+	    Basic components should be available very early in the D8 production life-cycle
+
+            <aside class="notes">
+              - people can start using thing<br />
+              - development of solutions higher in the stack<br />
+              - more chances we end up with a standardized solution<br />
+            </aside>
 	  </section>
+
 	  <section>
-	    <blockquote>
-	      I really like what [solution Y] is doing. [Solution Y] has the content creators in mind like NO other solution.
-	    </blockquote>
+	    <h3>Use existing tools</h3>
+	    Entity API, Field API, Plugins, ...
+
+            <aside class="notes">
+              - code for free<br />
+              - out of the box integrations<br />
+              - easier for contrib<br />
+            </aside>
 	  </section>
+
 	  <section>
-	    <blockquote>
-	      We need to focus on the content creators! The state of media handling is overall appalling.
-	    </blockquote>
+	    <h3>Non file-centric storage components</h3>
+	    Local files are only a subset of all media.
+
+            <aside class="notes">
+              - similar approaches already exist<br />
+              - no assumptions<br />
+              - more flexibility<br />
+              - bundles can have semantic meaning<br />
+            </aside>
 	  </section>
 	</section>
 
-
 	<section>
 	  <section>
-	    <h3>Where should we go from here?</h3>
+	    <h2>What do we have?</h2>
 	  </section>
 	  <section>
-	    <h3>We should start now!</h3>
-	    Solid and reliable D8 media handling solution/solutions must be ready early enough.
+	    <h3>Storage component</h3>
+	    <a href="http://drupal.org/project/media_entity">http://drupal.org/project/media_entity</a>
 	  </section>
 	  <section>
-	    <h3>Talk, talk, talk...</h3>
-	    Let's try to work together and use the best from each solution.
-	  </section>
-	  <section>
-	    <h3>Make development sustainable</h3>
-	    There is a lot of work to do. Relying strictly on our free time is probably utopia.
+	    <h3>2 (strong) Summer of Code proposals</h3>
+	    <ul>
+	      <li>WYSIWYG entity embed</li>
+	      <li>Migrate integration, editorial experience, display configuration and YouTube/Vimeo integration."</li>
+	    </ul>
 	  </section>
 	</section>
 
 	<section>
-	  <img src="img/discussion.jpg" /><br />
-	  <small><small>http://www.flickr.com/photos/mgifford/4539928584/ by Mike Gifford</small></small>
-	</section>
+	  <section>
+	    <h2>We need help!</h2>
+	    This is not going to magically happen. We need your help in order to succeed.
 
-	<section>
-	  <img src="img/sprint.png" />
+            <aside class="notes">
+              - would love to say that everything is done, but I'd lie<br />
+              - have a project?<br />
+              - interesed in Media?<br />
+            </aside>
+	  </section>
+
+	  <section>
+	    <h3>We need people of various expertise</h3>
+	    <ul>
+	      <li>frontend</li>
+	      <li>UX</li>
+	      <li>interface design</li>
+	      <li>backend</li>
+	      <li>project mgmt</li>
+	      <li>ideas, past experience</li>
+	      <li>You name it!</li>
+	    </ul>
+
+	  </section>
+	  <section>
+	    <h3>How to get involved?</h3>
+	    <ul>
+	      <li><a href="http://groups.drupal.org/media">groups.drupal.org/project/media</a></li>
+	      <li>#drupal-media @ Freenode</li>
+	      <li><a href="http://drupal.org/project/media_entity">drupal.org/projec/media_entity</a></li>
+	      <li>@slashrsm, <a href="http://drupal.org/user/744628">drupal.org/user/744628</a></li>
+	      <li>Sprint at NYC Camp, New York, April 10-13</li>
+	      <li>Sprint at DrupalCamp Alpe-Adria, Portorož, Slovenia, May 17-20</li>
+	      <li>DrupalCon Austin</li>
+	    </ul>
+	  </section>
 	</section>
 
 	<section>
 	  <h2>Thank you!</h2>
-	  <h3>Sprint on friday!</h3>
-	  <h3>Please evaluate!</h3>
-	  <big>http://prague2013.drupal.org/node/add/session-evaluation?nid=2128</big>
+	  <h3>Questions?</h3>
 	  <p style="margin-top: 3em;">
 	    <small><a href="http://janezurevc.name">Janez Urevc</a> / <a href="http://twitter.com/slashrsm">@slashrsm</a> / <a href="http://janezurevc.name">http://janezurevc.name</a></small>
 	  </p>
